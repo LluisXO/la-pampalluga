@@ -5,7 +5,7 @@
 			"Nom": "article 1",
 			"Nom_foto": "foto1",
 			"Preu": 30,
-			"Descripció": "desc1"
+			"Descripcio": "desc1"
 		}
 	},
 	{
@@ -14,7 +14,7 @@
 			"Nom": "article2",
 			"Nom_foto": "foto2",
 			"Preu": 140,
-			"Descripció": "desc2"
+			"Descripcio": "desc2"
 		}
 	},
 	{
@@ -23,7 +23,7 @@
 			"Nom": "article3",
 			"Nom_foto": "foto3",
 			"Preu": 55,
-			"Descripció": "desc3"
+			"Descripcio": "desc3"
 		}
 	}
 ]
