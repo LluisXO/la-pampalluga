@@ -34,12 +34,12 @@
       }
     },
   mounted: {
-   self=this;
+   
    axios.get('./articles.json').
-   then(response => (self.articles =  JSON.parse(response.data))).
-   catch(response => (self.messages =  JSON.parse(response.data) )).
+   then(response => (articles =  JSON.parse(response.data))).
+   catch(response => (messages =  JSON.parse(response.data) )).
    finally(function(){
-    console.log(self.articles);
+    console.log(articles);
    });
   }
   }).mount('#app');
