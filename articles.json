@@ -4,8 +4,8 @@
 		"values": {
 			"Nom": "article 9",
 			"Nom_foto": "foto1",
-			"Preu": "",
-			"Descripcio": ""
+			"Preu": 110,
+			"Descripcio": "desc 9"
 		}
 	},
 	{
