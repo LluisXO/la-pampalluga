@@ -33,7 +33,6 @@ var vm = new Vue({
 	 },
 	 methods:{
 	 },
-	 
         mounted () {
 		axios.get('./articles.json').then(response => (this.articles = response.data));
         },
