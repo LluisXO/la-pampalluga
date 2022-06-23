@@ -15,7 +15,6 @@
 
 
 <div id="app">
-  {{ message }}
   
   <div v-for="article in articles">
     <span><strong>{{article.values['Nom']}}</strong></span>   
@@ -25,37 +24,10 @@
   </div>
 </div>
 <script>
-//  import articles from "./articles.json";
-
-/*
-  const { createApp } = Vue
-  const axios = require('axios').default;
-
-
-  createApp({
-    data() {
-      return {
-        message: 'Hello Vue!',
-        messages: '',
-        articles: [],
-      }
-    },
-  mounted: {
-   
-   axios.get('./articles.json').
-   then(response => (articles =  JSON.parse(response.data))).
-   catch(response => (messages =  JSON.parse(response.data) )).
-   finally(function(){
-    console.log(articles);
-   });
-  }
-  }).mount('#app');
-*/
 	
 var vm = new Vue({
 	 el: '#app',
 	 data: {
-        message: 'Hello Vue!',
         messages: '',
         articles: [],
 	 },
