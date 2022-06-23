@@ -1,6 +1,7 @@
 <html>
   <head>
 <script src="https://unpkg.com/vue@3"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <h1>La Pampalluga webshop</h1>
@@ -17,7 +18,13 @@
   </div>
 </div>
 <script type="module">
-  import articles from "./articles.json";
+//  import articles from "./articles.json";
+   axios.get('./articles.json').
+   then(response => (articles =  JSON.parse(response.data))).
+   catch(response => (messages =  JSON.parse(response.data) )).
+   finally(function(){
+console.log(articles);
+   });
 
   const { createApp } = Vue
 
