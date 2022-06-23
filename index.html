@@ -65,7 +65,7 @@ var vm = new Vue({
    self.this;
    axios.get('./articles.json').
    then(response => (self.articles =  JSON.parse(response))).
-   catch(response => (self.messages =  JSON.parse(response) )).
+   catch(response => (self.messages =  response )).
    finally(function(){
     console.log(self.articles);
    });
