@@ -10,10 +10,10 @@
 <div id="app">
   {{ message }}
   
-  <div v-for="articles">
-    <span>{{nom}}</span>   
-    <span>{{foto}}</span>  
-    <span>{{preu}}</span>  
+  <div v-for="article in articles">
+    <span>{{article.values.nom}}</span>   
+    <span>{{article.values.foto}}</span>  
+    <span>{{article.values.preu}}</span>  
   </div>
 </div>
 
