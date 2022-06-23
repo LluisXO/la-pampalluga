@@ -19,12 +19,7 @@
 </div>
 <script>
 //  import articles from "./articles.json";
-   axios.get('./articles.json').
-   then(response => (articles =  JSON.parse(response.data))).
-   catch(response => (messages =  JSON.parse(response.data) )).
-   finally(function(){
-console.log(articles);
-   });
+
 
   const { createApp } = Vue
 
@@ -33,9 +28,20 @@ console.log(articles);
     data() {
       return {
         message: 'Hello Vue!',
-        articles: articles,
+        messages: '',
+        articles: [],
       }
-    }
+    },
+    ,
+  mounted: {
+   self=this;
+   axios.get('./articles.json').
+   then(response => (self.articles =  JSON.parse(response.data))).
+   catch(response => (self.messages =  JSON.parse(response.data) )).
+   finally(function(){
+    console.log(self.articles);
+   });
+  }
   }).mount('#app');
   
 </script>
