@@ -17,7 +17,7 @@
     <span>{{article.values.preu}}</span>  
   </div>
 </div>
-<script type="module">
+<script>
 //  import articles from "./articles.json";
    axios.get('./articles.json').
    then(response => (articles =  JSON.parse(response.data))).
