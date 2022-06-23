@@ -1,42 +1,37 @@
+<!DOCTYPE html>
 <html>
   <head>
-<!--
-<script src="https://unpkg.com/vue@3"></script>
--->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>La Pampalluga</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<!--
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
--->
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   </head>
   <body>
-    <h1>La Pampalluga webshop</h1>
-
-
-
-<div id="app">
-  
-  <div v-for="article in articles">
-    <span><strong>{{article.values['Nom']}}</strong></span>   
-    <span><img :src="'./images/' + article.values['Nom_foto'] + '.jpg'"/></span>  
-    <span>{{article.values['Preu']}} €</span>  
-    <span>{{article.values['Descripcio']}}</span>  
-  </div>
-</div>
-<script>
-	
-var vm = new Vue({
-	 el: '#app',
-	 data: {
-        messages: '',
-        articles: [],
-	 },
-	 methods:{
-	 },
-        mounted () {
-		axios.get('./articles.json').then(response => (this.articles = response.data));
-        },
-});
-</script>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        Articles de la Pampalluga
+      </h1>
+      <p class="subtitle">
+        Webshop!
+      </p>
+    </div>
+  </section>
+  <section class="section" id="app">
+    <div class="container">
+	    <div class="columns is-multiline">
+		    
+  <div v-for="article in articles" class="column is-one-quarter is-mobile-full">
+    <div><img :src="'./images/' + article.values['Nom_foto'] + '.jpg'"/></div>
+    <h2 class="title is-3">{{article.values['Nom']}}</h2>   
+    <div>{{article.values['Preu']}} €</div>  
+    <div>{{article.values['Descripcio']}}</div>  
+  </div>  
+	    </div>
+	  </div>
+</section>
   </body>
 </html>
