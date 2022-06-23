@@ -1,7 +1,26 @@
 [
 	{
-		"nom": "article 1",
-		"foto": "foto1",
-		"preu": 30
+		"id": "i-yjPkN9yvc3",
+		"values": {
+			"Nom": "article 1",
+			"Nom_foto": "foto1",
+			"Preu": 30
+		}
+	},
+	{
+		"id": "i-7lrU054Xr9",
+		"values": {
+			"Nom": "article2",
+			"Nom_foto": "foto2",
+			"Preu": 140
+		}
+	},
+	{
+		"id": "i-SCw1mTLSYG",
+		"values": {
+			"Nom": "article3",
+			"Nom_foto": "foto3",
+			"Preu": 55
+		}
 	}
 ]
