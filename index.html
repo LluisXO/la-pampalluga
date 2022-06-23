@@ -21,7 +21,7 @@
 <script>
 //  import articles from "./articles.json";
 
-
+/*
   const { createApp } = Vue
   const axios = require('axios').default;
 
@@ -44,7 +44,28 @@
    });
   }
   }).mount('#app');
- 
+*/
+var vm = new Vue({
+	 el: '#vue-app',
+	 data: {
+        message: 'Hello Vue!',
+        messages: '',
+        articles: [],
+	 },
+	 methods:{
+	 },
+	 
+        mounted () {
+   self.this;
+   axios.get('./articles.json').
+   then(response => (self.articles =  JSON.parse(response.data))).
+   catch(response => (self.messages =  JSON.parse(response.data) )).
+   finally(function(){
+    console.log(self.articles);
+   });
+        },	 
+
+});
 </script>
   </body>
 </html>
