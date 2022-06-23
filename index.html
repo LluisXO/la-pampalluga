@@ -16,11 +16,11 @@
     <span>{{article.values.preu}}</span>  
   </div>
 </div>
-
+<script type="module">
+  import articles from "./articles.json";
+</script>
 <script>
   const { createApp } = Vue
-  //import articles from "./articles.json";
-  const parse = require('./articles.json');
 
 
   createApp({
