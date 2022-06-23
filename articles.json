@@ -1,1 +1,14 @@
-{"Preu":30,"foto":"foto1","Nom article":"article 1"}
+[
+	{
+		"foto": "foto1",
+		"preu": 30,
+		"Values": [
+			{
+				"Nom": "article 1",
+				"Nom_foto": "foto1",
+				"Preu": 30
+			}
+		],
+		"nom_article": "article 1"
+	}
+]
