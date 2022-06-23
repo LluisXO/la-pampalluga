@@ -32,5 +32,21 @@
 	</div>
 </div>
 </section>
+<script>
+	
+var vm = new Vue({
+	 el: '#app',
+	 data: {
+        messages: '',
+        articles: [],
+	 },
+	 methods:{
+	 },
+	 
+        mounted () {
+		axios.get('./articles.json').then(response => (this.articles = response.data));
+        },
+});
+</script>
   </body>
 </html>
