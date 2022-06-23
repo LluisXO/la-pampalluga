@@ -10,7 +10,6 @@
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   </head>
   <body>
-<div  id="app">
   <section class="section">
     <div class="container">
       <h1 class="title">
@@ -21,7 +20,7 @@
       </p>
     </div>
   </section>
-  <section class="section">
+  <section class="section" id="app">
     <div class="container">
 	    <div class="columns is-multiline">    
 		 <div v-for="article in articles" class="column is-one-quarter is-mobile-full">
@@ -33,6 +32,5 @@
 	</div>
 </div>
 </section>
-</div>
   </body>
 </html>
