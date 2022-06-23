@@ -18,7 +18,7 @@
   
   <div v-for="article in articles">
     <span><strong>{{article.values['Nom']}}</strong></span>   
-    <span><img :src="'./images/¡ + article.values['Nom_foto']"/></span>  
+    <span><img :src="'./images/' + article.values['Nom_foto'] + '.jpg'"/></span>  
     <span>{{article.values['Preu']}} €</span>  
     <span>{{article.values['Descripcio']}}</span>  
   </div>
